@@ -1,8 +1,8 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html><html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Breaking the Cycle: MoC in Offshore Operations</title>
+  <title>MoC Saturation – Insight Estratégico</title>
   <style>
     body {
       margin: 0;
@@ -23,29 +23,37 @@
       color: #888;
       text-align: center;
       margin-bottom: 2rem;
+      font-size: 1.2rem;
     }
-    .content {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
-      width: 100%;
-      max-width: 1200px;
-    }
-    .card {
+    .container {
+      max-width: 900px;
       background: #1a1f2b;
-      border-left: 4px solid #00eaff;
-      padding: 1rem 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 0 12px rgba(0, 234, 255, 0.1);
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 0 15px rgba(0, 234, 255, 0.08);
     }
-    .card h2 {
-      color: #00eaff;
+    p, li {
+      line-height: 1.6;
+    }
+    ul {
+      padding-left: 1.2rem;
     }
     a {
       color: #ffcc00;
       text-decoration: none;
     }
-    .footer {
+    .button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #00eaff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 0 12px #00eaff;
+      text-align: center;
+    }
+    footer {
       margin-top: 4rem;
       color: #888;
       font-size: 0.9rem;
@@ -54,58 +62,36 @@
   </style>
 </head>
 <body>
-  <h1>Breaking the Cycle: Excessive MoC in Offshore Piping</h1>
+  <h1>MoC Saturation: A Falha Invisível no Gerenciamento de Mudanças</h1>
   <div class="subtitle">
-    A groundbreaking insight by F.F.. <br>
-    A rarely discussed operational inefficiency — now exposed.
-  </div>  <div class="content">
-    <div class="card">
-      <h2>1. OSHA 1910.119</h2>
-      <p><strong>"Written procedures must ensure the necessary time period for the change is addressed…"</strong></p>
-      <p><a href="./osha3132.pdf">Download OSHA 3132 (PDF)</a></p>
-      <p><em>Applied to avoid indefinite loops in minor procedural updates.</em></p>
-    </div><div class="card">
-  <h2>2. API Q1 - Section 5.11</h2>
-  <p><strong>"If the temporary change is to be made permanent, it shall be subject to the full review process."</strong></p>
-  <p><a href="./API%20Spec%20Q1_9th%20edition.pdf">Download API Q1 (PDF)</a></p>
-  <p><em>Used to formalize repeated change cycles in underwater piping prep stages.</em></p>
+    Um insight técnico pioneiro por Felipe França<br>
+    A oportunidade de transformar o caos normativo em excelência operacional.
+  </div>  <div class="container">
+    <h2>O Dilema</h2>
+    <p>Se toda mudança exige MoC, o que resta do procedimento original?</p>
+    <p>Felipe França identificou uma falha crítica: <strong>o uso excessivo e repetitivo do Gerenciamento de Mudanças (MoC)</strong> está corroendo a eficiência e obscurecendo a padronização operacional.</p><h2>O Achado</h2>
+<p>Após analisar quatro normas técnicas internacionais — OSHA 1910.119, API Q1, ISO 9001 e ISO 45001 (DNV) —, ele descobriu que:</p>
+<ul>
+  <li>Apenas a <strong>API Q1</strong> possui um dispositivo claro e objetivo para <strong>limitar o MoC</strong>.</li>
+  <li>As demais normas são importantes, mas genéricas ou implícitas.</li>
+  <li>Surge então um novo conceito: <strong>“Efeito Saturação do MoC”</strong>.</li>
+</ul>
+
+<h2>O Impacto</h2>
+<p>Esse conceito pode ser usado para:</p>
+<ul>
+  <li>Evitar looping normativo e burocrático em projetos de alto risco.</li>
+  <li>Redefinir protocolos internos com base técnica legítima.</li>
+  <li>Propor um novo padrão global de boas práticas operacionais.</li>
+</ul>
+
+<div style="text-align: center;">
+  <a class="button" href="moc-innovation.html">Acesse a Análise Completa</a>
 </div>
 
-<div class="card">
-  <h2>3. ISO 9001 – Clause 6.3 & 8.5.6</h2>
-  <p><strong>"Changes shall be carried out in a planned manner... controlled to ensure conformity."</strong></p>
-  <p><a href="./ISO-9001-2015.pdf">Download ISO 9001 (PDF)</a></p>
-  <p><em>Triggered permanent updates to diver deployment procedures.</em></p>
-</div>
-
-<div class="card">
-  <h2>4. ISO 45001 – DNV</h2>
-  <p><strong>"Management of change – a crucial control element... requires dedicated process."</strong></p>
-  <p><a href="./iso-450012015-ebook.pdf">Download DNV/ISO 45001 (PDF)</a></p>
-  <p><em>Instated to limit overuse of MOC in pressure test routine variations.</em></p>
-</div>
-
-  </div>  <div class="card" style="margin-top: 3rem; max-width: 1200px;">
-    <h2>8 Case Studies: Piping Deployment in Deep-Sea Drilling</h2>
-    <ul>
-      <li>Redundant MOC cycles for similar tool changes during seabed insertion.</li>
-      <li>Valve position reviews with no process deviation but excessive MoC requests.</li>
-      <li>Repeated anchoring position tweaks requiring full MOC each time.</li>
-      <li>Identical gasket swaps triggering 3+ MOC in the same week.</li>
-      <li>Temporary welding pattern adjustments misclassified as new processes.</li>
-      <li>MoC for routine torque recalibration with no criticality change.</li>
-      <li>New sensor cabling path approvals filed multiple times under MOC.</li>
-      <li>Offshore communication system updates flagged under full MOC without impact.</li>
-    </ul>
-  </div>  <div class="footer">
+  </div>  <footer>
     Designed for MK. Built for impact.<br>
     © Felipe França – MOC Research Initiative, 2025.
-  </div>
-<div style="text-align:center; margin-top: 3rem;">
-  <a href="moc-innovation.html"
-     style="background: #00eaff; padding: 1rem 2rem; border-radius: 8px; color: #000; font-weight: bold; text-decoration: none; box-shadow: 0 0 12px #00eaff;">
-    Descubra a Inovação de F.F sobre o MOC
-  </a>
-</div>
+  </footer>
 </body>
 </html>
