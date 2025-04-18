@@ -2,44 +2,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inovação Estratégica no MoC – F.F.</title>
+  <title>MoC Saturation – Insight Estratégico</title>
   <style>
     body {
-      background: linear-gradient(135deg, #0b0f17 0%, #121f2f 100%);
-      font-family: 'Segoe UI', sans-serif;
-      color: #f0f0f0;
       margin: 0;
-      padding: 0;
-    }
-    header {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0b0f17;
+      color: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding: 2rem;
-      text-align: center;
-      background-color: #0f2027;
-      box-shadow: 0 2px 10px rgba(0, 234, 255, 0.1);
     }
-    header h1 {
-      font-size: 2.8rem;
+    h1 {
+      font-size: 2.5rem;
       color: #00eaff;
-      margin-bottom: 0.5rem;
+      text-align: center;
     }
-    header p {
-      color: #ccc;
-      font-size: 1.1rem;
-    }
-    main {
-      max-width: 1100px;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
-      background-color: #1a1f2b;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 234, 255, 0.05);
-    }
-    section {
+    .subtitle {
+      color: #888;
+      text-align: center;
       margin-bottom: 2rem;
+      font-size: 1.2rem;
+    }
+    .container {
+      max-width: 900px;
+      background: #1a1f2b;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 0 15px rgba(0, 234, 255, 0.08);
     }
     h2 {
       color: #00eaff;
       font-size: 1.6rem;
+      margin-top: 2rem;
     }
     p, li {
       line-height: 1.6;
@@ -51,25 +47,24 @@
       color: #ffcc00;
       text-decoration: none;
     }
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 1.5rem;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      background-color: #232a3a;
     }
-    .card {
-      background: #232a3a;
-      padding: 1.2rem;
-      border-radius: 10px;
-      border-left: 4px solid #00eaff;
-      box-shadow: 0 0 8px rgba(0, 234, 255, 0.1);
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #444;
     }
-    .card h3 {
-      margin-top: 0;
-      color: #00eaff;
+    th {
+      background-color: #00eaff;
+      color: #000;
     }
     .button {
       display: inline-block;
-      margin-top: 1rem;
+      margin-top: 2rem;
       padding: 0.75rem 1.5rem;
       background-color: #00eaff;
       color: #000;
@@ -79,64 +74,75 @@
       text-align: center;
     }
     footer {
-      text-align: center;
-      padding: 2rem;
+      margin-top: 4rem;
       color: #888;
       font-size: 0.9rem;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>MoC Saturation Effect</h1>
-    <p>Uma proposta inédita por Felipe França – Redefinindo o Gerenciamento de Mudança</p>
-  </header>
-  <main>
-    <section>
-      <h2>Casos Reais Validados por Engenheiros de Campo</h2>
-      <p>Estes 10 exemplos foram discutidos com engenheiros de projeto e manutenção offshore e representam situações onde o uso repetido do MoC tornou-se ineficiente ou redundante.</p>
-      <div class="card-grid">
-        <div class="card"><h3>01</h3><p>Troca repetida de gaxetas sem alteração de risco → 3 MoCs seguidos no mesmo mês.</p><p><strong>Solução:</strong> Criar POP padrão com variação previamente autorizada.</p></div>
-        <div class="card"><h3>02</h3><p>Reposicionamento de válvulas idênticas exigindo novo MoC sem impacto no processo.</p><p><strong>Solução:</strong> Adotar envelope de tolerância previamente aprovado.</p></div>
-        <div class="card"><h3>03</h3><p>Torqueagens revisadas por critérios ambientais tratados como "mudança técnica".</p><p><strong>Solução:</strong> Incluir variações operacionais nas instruções de montagem.</p></div>
-        <div class="card"><h3>04</h3><p>Reinstalação de sensores com mesmo modelo e função gerando novo MoC.</p><p><strong>Solução:</strong> Aprovar matriz de equivalência técnica por modelo.</p></div>
-        <div class="card"><h3>05</h3><p>Alteração mínima no ângulo de inserção de tubulação = novo MoC toda vez.</p><p><strong>Solução:</strong> Criar faixa permitida e treinar campo para registrar sem revalidar.</p></div>
-        <div class="card"><h3>06</h3><p>Uso repetido de procedimento temporário sem atualização do POP.</p><p><strong>Solução:</strong> Política de absorção: 2 usos = revisão de POP obrigatória.</p></div>
-        <div class="card"><h3>07</h3><p>MoC para cada recalibração de torque tool.</p><p><strong>Solução:</strong> Certificação por lote ou periodicidade pré-aprovada.</p></div>
-        <div class="card"><h3>08</h3><p>Cabos de sensores deslocados em novas rotas exigindo MoC redundante.</p><p><strong>Solução:</strong> Aprovar mapeamento de rotas técnicas toleradas.</p></div>
-        <div class="card"><h3>09</h3><p>Instalação de proteção anticorrosiva padrão tratada como mudança especial.</p><p><strong>Solução:</strong> Documentar tipos já homologados em pacote técnico.</p></div>
-        <div class="card"><h3>10</h3><p>MoC para reinstalações por substituição 1:1 de elementos funcionais idênticos.</p><p><strong>Solução:</strong> Criar categoria de substituição por equivalência total (auto liberada).</p></div>
-      </div>
-    </section><section>
-  <h2>Tabela Comparativa entre Normas</h2>
-  <table style="width:100%; border-collapse:collapse; margin-top:1rem;">
-    <thead style="background:#00eaff; color:#000;">
-      <tr>
-        <th style="padding:10px;">Norma</th>
-        <th style="padding:10px;">Define quando parar o MoC?</th>
-        <th style="padding:10px;">Exige atualização de POP?</th>
-        <th style="padding:10px;">Linguagem objetiva?</th>
-      </tr>
-    </thead>
-    <tbody style="text-align:center; background-color:#232a3a;">
-      <tr><td>OSHA 1910.119</td><td>Não</td><td>Indireto</td><td>Moderada</td></tr>
-      <tr><td>ISO 9001</td><td>Não</td><td>Sim</td><td>Ambígua</td></tr>
-      <tr><td>ISO 45001 (DNV)</td><td>Não</td><td>Não citado</td><td>Alta</td></tr>
-      <tr style="font-weight:bold; background:#1a1f2b;">
-        <td>API Q1 – §5.11</td><td>✔️</td><td>✔️</td><td>✔️</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
+  <h1>MoC Saturation: A Falha Invisível no Gerenciamento de Mudanças</h1>
+  <div class="subtitle">
+    Um insight técnico estratégico<br>
+    Desenvolvido por MK Research & Strategy
+  </div>  <div class="container">
+    <h2>O Dilema</h2>
+    <p>Se toda mudança exige MoC, o que resta do procedimento original?</p>
+    <p>Este estudo identificou uma falha crítica: <strong>o uso excessivo e repetitivo do Gerenciamento de Mudanças (MoC)</strong> está corroendo a eficiência e obscurecendo a padronização operacional em muitos projetos técnicos e industriais.</p><h2>Comparativo entre Normas Técnicas</h2>
+<p>As quatro normas analisadas abaixo oferecem perspectivas distintas sobre MoC. Apenas a API Q1 traz um critério claro de transição de mudança temporária para permanente, mas as demais contribuem para uma base sólida na revisão de processos.</p>
 
-<div style="text-align:center">
-  <a class="button" href="index.html">Voltar para a página principal</a>
+<table>
+  <thead>
+    <tr>
+      <th>Norma</th>
+      <th>Define Limite para MoC</th>
+      <th>Orienta Atualização de POP</th>
+      <th>Aplicabilidade no Documento Técnico</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OSHA 1910.119</td>
+      <td>Não</td>
+      <td>Indireta</td>
+      <td>Alta – reforça a importância da rastreabilidade e tempo definido</td>
+    </tr>
+    <tr>
+      <td>ISO 9001</td>
+      <td>Não</td>
+      <td>Sim</td>
+      <td>Média – planejamento e controle estruturado</td>
+    </tr>
+    <tr>
+      <td>ISO 45001 (DNV)</td>
+      <td>Não</td>
+      <td>Não citado</td>
+      <td>Média – dá visibilidade à importância do controle de mudanças</td>
+    </tr>
+    <tr style="font-weight: bold; background-color: #1a1f2b;">
+      <td>API Q1 – §5.11</td>
+      <td>✔️</td>
+      <td>✔️</td>
+      <td>Altíssima – permite formalizar limites, revisar POPs e encerrar loops de MoC</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Impacto Estratégico</h2>
+<p>O conceito de "Efeito Saturação do MoC" pode ser usado para:</p>
+<ul>
+  <li>Evitar loops burocráticos e improdutivos em sistemas regulados.</li>
+  <li>Redefinir limites e exceções com base técnica robusta.</li>
+  <li>Propor um modelo de revisão contínua de POPs vinculado à frequência de MoC.</li>
+</ul>
+
+<div style="text-align: center;">
+  <a class="button" href="moc-innovation.html">Ver Análise Detalhada</a>
 </div>
 
-  </main>
-  <footer>
-    Desenvolvido por MK. – 2025<br>
-    Todos os direitos reservados.
+  </div>  <footer>
+    Desenvolvido por MK • Soluções Estratégicas em Engenharia e Inovação • 2025
   </footer>
 </body>
 </html>
