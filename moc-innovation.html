@@ -2,40 +2,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MoC Saturation – Insight Estratégico</title>
+  <title>Inovação Estratégica no MoC – MK</title>
   <style>
     body {
-      margin: 0;
+      background: linear-gradient(135deg, #0b0f17 0%, #121f2f 100%);
       font-family: 'Segoe UI', sans-serif;
-      background: #0b0f17;
-      color: #f1f1f1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
     }
-    h1 {
-      font-size: 2.5rem;
+    header {
+      padding: 2rem;
+      text-align: center;
+      background-color: #0f2027;
+      box-shadow: 0 2px 10px rgba(0, 234, 255, 0.1);
+    }
+    header h1 {
+      font-size: 2.8rem;
       color: #00eaff;
-      text-align: center;
+      margin-bottom: 0.5rem;
     }
-    .subtitle {
-      color: #888;
-      text-align: center;
-      margin-bottom: 2rem;
-      font-size: 1.2rem;
+    header p {
+      color: #ccc;
+      font-size: 1.1rem;
     }
-    .container {
-      max-width: 900px;
-      background: #1a1f2b;
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background-color: #1a1f2b;
       border-radius: 10px;
-      padding: 2rem;
-      box-shadow: 0 0 15px rgba(0, 234, 255, 0.08);
+      box-shadow: 0 0 15px rgba(0, 234, 255, 0.05);
     }
     h2 {
       color: #00eaff;
       font-size: 1.6rem;
-      margin-top: 2rem;
     }
     p, li {
       line-height: 1.6;
@@ -43,24 +44,28 @@
     ul {
       padding-left: 1.2rem;
     }
-    a {
-      color: #ffcc00;
-      text-decoration: none;
+    .card-section {
+      margin-top: 2rem;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-      background-color: #232a3a;
+    .card {
+      background: #232a3a;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 8px rgba(0, 234, 255, 0.1);
     }
-    th, td {
-      padding: 12px;
-      text-align: center;
-      border: 1px solid #444;
-    }
-    th {
-      background-color: #00eaff;
+    .card-header {
+      padding: 1rem;
+      cursor: pointer;
+      background: #00eaff;
       color: #000;
+      font-weight: bold;
+      border-radius: 8px 8px 0 0;
+    }
+    .card-body {
+      display: none;
+      padding: 1rem;
+      background-color: #2c3547;
+      border-radius: 0 0 8px 8px;
     }
     .button {
       display: inline-block;
@@ -74,75 +79,79 @@
       text-align: center;
     }
     footer {
-      margin-top: 4rem;
+      text-align: center;
+      padding: 2rem;
       color: #888;
       font-size: 0.9rem;
-      text-align: center;
     }
   </style>
+  <script>
+    function toggleCard(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
 </head>
 <body>
-  <h1>MoC Saturation: A Falha Invisível no Gerenciamento de Mudanças</h1>
-  <div class="subtitle">
-    Um insight técnico estratégico<br>
-    Desenvolvido por MK Research & Strategy
-  </div>  <div class="container">
-    <h2>O Dilema</h2>
-    <p>Se toda mudança exige MoC, o que resta do procedimento original?</p>
-    <p>Este estudo identificou uma falha crítica: <strong>o uso excessivo e repetitivo do Gerenciamento de Mudanças (MoC)</strong> está corroendo a eficiência e obscurecendo a padronização operacional em muitos projetos técnicos e industriais.</p><h2>Comparativo entre Normas Técnicas</h2>
-<p>As quatro normas analisadas abaixo oferecem perspectivas distintas sobre MoC. Apenas a API Q1 traz um critério claro de transição de mudança temporária para permanente, mas as demais contribuem para uma base sólida na revisão de processos.</p>
+  <header>
+    <h1>MoC Saturation Effect</h1>
+    <p>Iniciativa Estratégica – Desenvolvido por MK</p>
+  </header>
+  <main>
+    <section>
+      <h2>Ações Propostas – Detalhamento Interativo</h2>
+      <div class="card-section">
+        <div class="card">
+          <div class="card-header" onclick="toggleCard('card1')">
+            Publicação do 1º white paper técnico sobre o “Efeito de Saturação do MoC”
+          </div>
+          <div class="card-body" id="card1">
+            <p>Objetivo: Formalizar o conceito identificado como nova proposta metodológica de controle de MoC recorrente.</p>
+            <p>Implementação: Documento técnico publicado em nome institucional, apoiado por dados práticos e validação em campo.</p>
+            <p>Impacto: Referência pioneira em conferências, auditorias e gestão de excelência.</p>
+          </div>
+        </div><div class="card">
+      <div class="card-header" onclick="toggleCard('card2')">
+        Criação de indicadores de fadiga por MoC
+      </div>
+      <div class="card-body" id="card2">
+        <p>Objetivo: Medir e alertar para o excesso de uso do MoC em áreas específicas.</p>
+        <p>Implementação: Contador de MoCs por item/processo; alerta após 2 ou mais em curto prazo.</p>
+        <p>Impacto: Redução de burocracia e ativação automática de revisão de procedimento.</p>
+      </div>
+    </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Norma</th>
-      <th>Define Limite para MoC</th>
-      <th>Orienta Atualização de POP</th>
-      <th>Aplicabilidade no Documento Técnico</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>OSHA 1910.119</td>
-      <td>Não</td>
-      <td>Indireta</td>
-      <td>Alta – reforça a importância da rastreabilidade e tempo definido</td>
-    </tr>
-    <tr>
-      <td>ISO 9001</td>
-      <td>Não</td>
-      <td>Sim</td>
-      <td>Média – planejamento e controle estruturado</td>
-    </tr>
-    <tr>
-      <td>ISO 45001 (DNV)</td>
-      <td>Não</td>
-      <td>Não citado</td>
-      <td>Média – dá visibilidade à importância do controle de mudanças</td>
-    </tr>
-    <tr style="font-weight: bold; background-color: #1a1f2b;">
-      <td>API Q1 – §5.11</td>
-      <td>✔️</td>
-      <td>✔️</td>
-      <td>Altíssima – permite formalizar limites, revisar POPs e encerrar loops de MoC</td>
-    </tr>
-  </tbody>
-</table>
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('card3')">
+        Proposta de revisão de cláusulas internas com base técnica nas 4 normas
+      </div>
+      <div class="card-body" id="card3">
+        <p>Objetivo: Atualizar documentos internos de forma inteligente e segura.</p>
+        <p>Implementação: Cruzamento de boas práticas normativas e elaboração de novos POPs com base em frequência de mudança.</p>
+        <p>Impacto: Melhoria da rastreabilidade, segurança e estabilidade processual.</p>
+      </div>
+    </div>
 
-<h2>Impacto Estratégico</h2>
-<p>O conceito de "Efeito Saturação do MoC" pode ser usado para:</p>
-<ul>
-  <li>Evitar loops burocráticos e improdutivos em sistemas regulados.</li>
-  <li>Redefinir limites e exceções com base técnica robusta.</li>
-  <li>Propor um modelo de revisão contínua de POPs vinculado à frequência de MoC.</li>
-</ul>
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('card4')">
+        Apresentação em conferências SPE/OTC como tema inédito mundial
+      </div>
+      <div class="card-body" id="card4">
+        <p>Objetivo: Internacionalizar a discussão e transformar a empresa em referência global.</p>
+        <p>Implementação: Criação de pitch técnico, submissão para congressos e geração de network com instituições-chave.</p>
+        <p>Impacto: Prestígio institucional, atração de parcerias e valorização do capital intelectual interno.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div style="text-align: center;">
-  <a class="button" href="moc-innovation.html">Ver Análise Detalhada</a>
+<div style="text-align:center">
+  <a class="button" href="index.html">Voltar para a página principal</a>
 </div>
 
-  </div>  <footer>
-    Desenvolvido por MK • Soluções Estratégicas em Engenharia e Inovação • 2025
+  </main>
+  <footer>
+    Desenvolvido por MK • Estratégia e Engenharia Aplicada – 2025
   </footer>
 </body>
 </html>
